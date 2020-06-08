@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1e272e;
+}
+
+button,input{
+    border: 0;
+    outline: none;
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 2vh;
+    color: #0be881;
+}
+main{
+    background: #d2dae2;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    min-height: 80vh;
+    max-width: 600px;
+}
+
+main #text-area{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 1px #000000bf;
+}
+
+main #text-area input{
+    display: flex;
+    border: 0;
+    border-radius: 8px 0px 0px 8px;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+main #text-area button{
+    height: 44px;
+    border: 0;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 25px;
+    padding: 0px 10px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+main #text-area button:hover{
+    background: #0be881;
+    transform: scale(1.1);
+}
+
+main #list li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: ease-in 400ms;
+}
+
+main #list li p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+main #list li i{
+    font-size: 20px;
+}
+
+main #list li i:hover{
+    font-size: 25px;
+    margin-right: -5px;
+    color: red;
+}
+
+footer{
+    position: absolute;
+    bottom: 3vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0BE881;
+    cursor: pointer;
+}
+
+footer a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0BE881;
+}
+footer:hover {
+    font-size: 19px;
+}
+@keyframes strike{
+    0%   { width : 0; }
+    100% { width: calc(100% - 18px); }
+  }
+  .strike {
+    position: relative;
+  }
+  .strike::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    height: 2px;
+    background: rgb(255, 0, 0);
+    animation-name: strike;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+  }
+
+  @media (max-width: 400px){
+    main #text-area{
+        box-shadow: 0px 0px 4px 0.5px #000000bf;
+    }
+
+    main #text-area button{
+        height: 30px;
+        border-radius: 0px 8px 8px 0px;
+        font-size: 12px;
+    }
+  }
