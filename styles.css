@@ -29,7 +29,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 90vw;
-    min-height: 80vh;
+    min-height: 83vh;
     max-width: 600px;
 }
 
@@ -90,8 +90,7 @@ main #list li i:hover{
 }
 
 footer{
-    position: absolute;
-    bottom: 3vh;
+    margin: 10px;
     font-family: 'Ubuntu', sans-serif;
     color: #0BE881;
     cursor: pointer;
