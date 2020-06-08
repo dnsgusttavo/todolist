@@ -12,9 +12,16 @@ let taskLi; //Variable that contains the list item structures
 
 //Get the tasks stored in cache on load
 window.addEventListener("load", ()=> {
+
+    //Creates a local storage if does not exists
+    if(localStorage.getItem("tasks") == null)
+        localStorage.setItem("tasks", []);
+    
+    //Gets local cache only if  it have data
     if(localStorage.getItem("tasks") != "")
         tasks = JSON.parse(localStorage.getItem("tasks"));
- 
+    
+    //When window loads, reads the data in cache and displays it on screen
     tasks.forEach(task => {
         add(task.name,task.striked)
         list.innerHTML += taskLi;
