@@ -29,7 +29,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 90vw;
-    min-height: 83vh;
+    min-height: calc(100vh - 115px);
     max-width: 600px;
 }
 
