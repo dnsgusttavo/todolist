@@ -1,4 +1,3 @@
-
 //Getting elements
 const input = document.getElementById("input");
 const list = document.getElementsByTagName("ul")[0];
