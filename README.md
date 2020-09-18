@@ -14,4 +14,4 @@ This is a simple TODO List made using javascript. I did it basically to help me 
 [x] Strike complete tasks </br>
 
 ## ▶ Try it now
-https://dnsgusttavo.github.io/todolist/
+https://gustavomaltez.github.io/todolist/
